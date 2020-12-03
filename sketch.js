@@ -12,7 +12,7 @@ function setup() {
 function draw() {
   background(255,255,255);  
   
-  if (hascollided(bullet,wall))
+  if (hascollided(bullet, wall))
 {
   bullet.velocityX=0;
   var damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
@@ -31,11 +31,11 @@ function draw() {
 }
 
 
-function hascollided()
+function hascollided(lbullet, lwall)
 {
-  bulletre=bullet.x+bullet.width;
-  wallle=wall.x;
-  if (bulletre<=wallle)
+  lbullet=lbullet.x+bullet.width;
+  lwall=lwall.x;
+  if (lbullet<=lwall)
   {
     return true
   }
