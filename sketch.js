@@ -6,6 +6,7 @@ function setup() {
   bullet = createSprite(400,200,30,10);
   speed=random(223,321);
   weight=random(30,52);
+  thickness=random(22,83);
   bullet.velocityX=speed;
 }
 
