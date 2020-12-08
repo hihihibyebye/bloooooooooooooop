@@ -36,7 +36,7 @@ function hascollided(lbullet, lwall)
 {
   lbullet=lbullet.x+bullet.width;
   lwall=lwall.x;
-  if (lbullet<=lwall)
+  if (lbullet>=lwall)
   {
     return true
   }
